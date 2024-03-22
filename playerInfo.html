@@ -7,40 +7,53 @@
     <link rel="stylesheet" href="playerInfo.css">
 </head>
 <body>
-    <h1>Add Player Information</h1>
-    <div>
-    <form onsubmit="addPlayer(event)">
-        <input type="hidden" name="id" value="">
-        <label for="name">Name:</label><br>
-            <input type="text" name="name" id="name" required><br>
-        <label for="dob">Date of Birth:</label><br>
-            <input type="date" name="dob" id="dob"><br>
-        <label for="imageURL">Image URL:</label><br>
-            <input type="text" name="imageURL" id="imageURL"><br>
-        <label for="place">Birth Place:</label><br>
-            <input type="text" name="place" id="place"><br>
-        <label for="career">Career Details:</label><br>
-            <textarea name="career" id="career"></textarea><br>
-        <label for="matches">Number of matches:</label><br>
-            <input type="number" name="matches" id="matches"><br>
-        <label for="score">Score:</label><br>
-            <input type="number" name="score" id="score"><br>
-        <label for="fifties">Fifties:</label><br>
-            <input type="number" name="fifties" id="fifties"><br>
-        <label for="centuries">Centuries:</label><br>
-            <input type="number" name="centuries" id="centuries"><br>
-        <label for="wickets">Wickets:</label><br>
-            <input type="number" name="wickets" id="wickets"><br>
-        <label for="average">Average:</label><br>
-            <input type="number" name="average" id='average' step="any"><br>
-        <button type="submit">Submit Player Info</button>
-    </form>
+    <div id="form-div">
+        <h1 id="form-heading">Add Player Information</h1>
+        <form onsubmit="addPlayer(event)" id="form">
+            <input type="hidden" name="id" id="id" value="">
+            <label for="name">Name:</label><br>
+                <input type="text" name="name" id="name" required><br>
+            <label for="dob">Date of Birth:</label><br>
+                <input type="date" name="dob" id="dob"><br>
+            <label for="imageURL">Image URL:</label><br>
+                <input type="text" name="imageURL" id="imageURL"><br>
+            <label for="place">Birth Place:</label><br>
+                <input type="text" name="place" id="place"><br>
+            <label for="career">Career Details:</label><br>
+                <textarea name="career" id="career"></textarea><br>
+            <label for="matches">Number of matches:</label><br>
+                <input type="number" name="matches" id="matches"><br>
+            <label for="score">Score:</label><br>
+                <input type="number" name="score" id="score"><br>
+            <label for="fifties">Fifties:</label><br>
+                <input type="number" name="fifties" id="fifties"><br>
+            <label for="centuries">Centuries:</label><br>
+                <input type="number" name="centuries" id="centuries"><br>
+            <label for="wickets">Wickets:</label><br>
+                <input type="number" name="wickets" id="wickets"><br>
+            <label for="average">Average:</label><br>
+                <input type="number" name="average" id='average' step="any"><br>
+            <button type="submit" id="form-button">Submit Player Information</button>
+        </form>
     </div>
-    <hr>
-    <h1>Available Players' Information:</h1>
-    <ul id="list">
 
-    </ul>
+    <hr>
+    
+    <div id="list-main-div">
+        <div class="list-div-parent">
+            <div id="header"><h1 id="list-heading">Available Players' Information:</h1></div>
+            <div id="search-box-button">
+                <input type="text" name="search" id="search-input" placeholder="Enter search text...">
+                <button type="submit" id="search-button">Search</button>
+            </div>
+        </div>
+
+        <div id="list-div">
+            <ul id="list">
+
+            </ul>
+        </div>
+    </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
 <script src="playerInfo.js"></script>

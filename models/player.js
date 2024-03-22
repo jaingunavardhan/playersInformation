@@ -12,16 +12,46 @@ const Player = sequelize.define('player', {
         type: Sequelize.STRING,
         allowNull: false
     },
-    dob:Sequelize.DATE,
-    imageURL:Sequelize.STRING,
-    place:Sequelize.STRING,
-    career:Sequelize.STRING,
-    matches:Sequelize.INTEGER,
-    score:Sequelize.INTEGER,
-    fifties:Sequelize.INTEGER,
-    centuries:Sequelize.INTEGER,
-    wickets:Sequelize.INTEGER,
-    average:Sequelize.DOUBLE,
+    dob:{
+        type: Sequelize.STRING,
+        allowNull:true
+    },
+    imageURL:{
+        type: Sequelize.STRING,
+        allowNull: true
+    },
+    place:{
+        type: Sequelize.STRING,
+        allowNull: true
+    },
+    career:{
+        type: Sequelize.TEXT('long'),
+        allowNull: true
+    },
+    matches:{
+        type:Sequelize.STRING,
+        allowNull: true
+    },
+    score:{
+        type:Sequelize.STRING,
+        allowNull: true
+    },
+    fifties:{
+        type:Sequelize.STRING,
+        allowNull: true
+    },
+    centuries:{
+        type:Sequelize.STRING,
+        allowNull: true
+    },
+    wickets:{
+        type:Sequelize.STRING,
+        allowNull: true
+    },
+    average:{
+        type:Sequelize.STRING,
+        allowNull: true
+    }
 })
 
 module.exports = Player;

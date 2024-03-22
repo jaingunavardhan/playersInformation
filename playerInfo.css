@@ -1,3 +1,164 @@
-div{
+body{
+    padding: 0;
+    margin: 0;
+}
+hr{
+    margin: 3px;
+}
+h1, h2{
+    margin: 0;
+}
+
+#form-div{
+    background-color: rgb(255, 251, 199);
+    padding: 10px 0px 25px 0px;
+    top: 0;
+}
+#form-heading{
+    color: green;
+    padding: 0px;
     text-align: center;
+    margin-bottom: 10px;
+}
+form{
+    margin: 0 auto;
+    width: 400px
+}
+form input,textarea{
+    margin: 0px 0px 15px 0px;
+    padding: 7px;
+    width: inherit;
+    border: 1px solid green;
+    border-radius: 4px;
+    text-align: left;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline-color: green;
+    color: green;
+    background-color: inherit;
+}
+form label{
+    text-align: right;
+    float: left;
+    font-size: 13pt;
+}
+#form-button{
+    color: green;
+    width: inherit;
+    padding: 10px;
+    font-size: 13pt;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: green;
+    background-color: inherit;
+}
+#form-button:hover,
+#form-button:active{
+    color: White;
+    background-color: green; 
+}
+textarea{
+    padding-bottom: 50px;
+}
+
+
+#list-main-div{
+    background-color: rgb(223, 240, 255);
+    padding: 30px;
+}
+
+.list-div-parent{
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+#header{
+    display: inline-block;
+    margin-left: 30px;
+}
+#search-box-button{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+#search-input{
+    padding: 10px 20px 10px 10px;
+    text-align:left;
+    color: blue;
+    border-color: blue;
+    border-radius: 5px;
+    background-color: inherit;
+    outline-color: blue;
+}
+
+#search-button{
+    padding: 10px 50px;
+    color: blue;
+    border-color: blue;
+    border-radius: 5px;
+    background-color: inherit;
+    font-size: 15px;
+    font-weight: bold;
+}
+#search-button:hover,
+#search-button:active{
+    background-color: blue;
+    color: white;
+}
+
+#list-heading{
+    color: blue;
+}
+
+li{
+    font-size: 20px;
+    margin: 10px;
+    color: blue;
+}
+li button{
+    margin: 10px;
+    padding: 5px 13px 5px 13px;
+    color: maroon;
+    border-color: maroon;
+    border-radius: 5px;
+    background-color: inherit;
+}
+li button:hover,
+li button:active{
+    color: white;
+    background-color: maroon;
+}
+
+#div_inside_one{
+    display: flex;
+    color: green;
+}
+#div_img{
+    display: inline-block;
+}
+#div_h2_birth{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+#div_inside_two{
+    display: flex;
+    color: green;
+}
+#div_details{
+    display: inline-block;
+    min-inline-size: 250px;
+}
+#div_career{
+    display: inline-block;
+}
+
+p{
+    line-height: 1.5;
+}
+img{
+    width: 150;
+    height: 150;
 }
